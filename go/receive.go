@@ -51,7 +51,8 @@ func main() {
 		/*Closing a channel has one more useful feature - reading operations on closed channels do not block and always return default value for a channel type
         So Safe to close a Channel
         Here the forever channel is only used to synchronize the execution but not for sending data.
-        As we close the channel in the goroutine the reading operation does not block and the main function continues to run.*/
+        As we close the channel in the goroutine the reading operation does not block and the main function continues to run.
+        */
 
           close(forever)
 	}()
